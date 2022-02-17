@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/logoImv"
+            android:layout_width="130dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_height="130dp"/>
+
+        <RelativeLayout
+            android:id="@+id/unameLayout"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/logoImv"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittextback"
+            android:layout_height="45dp">
+
+            <EditText
+                android:id="@+id/edUname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:paddingLeft="30dp"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textColorHint="@color/white"
+                android:hint="username" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/passLayout"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittextback"
+            android:layout_below="@id/unameLayout">
+
+            <EditText
+                android:id="@+id/edPass"
+                android:hint="password"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:paddingLeft="30dp"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/passLayout"
+            android:background="@drawable/login_btn_back"
+            android:layout_width="300dp"
+            android:layout_height="45dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

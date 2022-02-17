@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/clickable_trans_bg">
+
+
+                <ImageView
+                    android:id="@+id/foodImg"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chinese_food" />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_toRightOf="@id/foodImg"
+                    android:text=""
+                    android:singleLine="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mobOneTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameTv"
+                    android:singleLine="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/foodImg"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/emailOneTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_below="@id/mobOneTv"
+                    android:layout_toRightOf="@id/foodImg"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/raleway_medium"
+                    android:layout_marginLeft="14dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

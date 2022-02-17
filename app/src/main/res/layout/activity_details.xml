@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        android:background="#fff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="Name:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/nameEd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="name"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <TextView
+                android:text="Mobile Numbers:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/mobileEdOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="mobile one"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <EditText
+                android:id="@+id/mobileEdTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="mobile two"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <TextView
+                android:text="Email Ids:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/emailEdOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="email one"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <EditText
+                android:id="@+id/emailEdTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="email two"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <TextView
+                android:text="Websites:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/webEdOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="website one"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <EditText
+                android:id="@+id/webEdTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="website two"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <TextView
+                android:text="Address:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="address"
+                android:padding="5dp"
+                android:textColor="#000" />
+            <TextView
+                android:text="Company Name:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="company name"
+                android:padding="5dp"
+                android:textColor="#000"/>
+            <TextView
+                android:text="Card Note:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/cardnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@null"
+                android:hint="note"
+                android:padding="5dp"
+                android:textColor="#000"/>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/save_btn_back"
+                android:text="Save Record" />
+
+            <ImageView
+                android:id="@+id/transferedImage"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/chinese_food" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
